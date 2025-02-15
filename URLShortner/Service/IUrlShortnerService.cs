@@ -16,6 +16,6 @@
         /// </summary>
         /// <param name="shortUrl">Instance of string</param>
         /// <returns></returns>
-        Task<string> GetOrigionalUrlAsync(string shortUrl);
+        Task<string> GetOrigionalUrlAsync(string shortcode);
     }
 }
