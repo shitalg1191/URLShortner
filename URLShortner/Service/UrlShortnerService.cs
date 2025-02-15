@@ -23,7 +23,7 @@ namespace URLShortner.Service
         }
         private string GenerateShortcode(int length = 6)
         {
-            return new string(Enumerable.Repeat(Alphabet, length).Select(s));
+            return new string(Enumerable.Repeat(Alphabet, length).Select(s => s[_random.Next(s.Length)]).ToArray());
 
         }
     }
